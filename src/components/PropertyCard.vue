@@ -4,7 +4,7 @@
       <v-img
         v-if="images && images[0]"
         height="280px"
-        :src="'/src/assets/listing/' + images[0] + '.jpeg'"
+        :src="'/listing/' + images[0] + '.jpeg'"
         cover
         class="flex-grow-0"
       ></v-img>
@@ -46,11 +46,8 @@ import { computed } from "vue";
 import type { Property } from "../types";
 import colors from "vuetify/util/colors";
 import { RouterLink } from "vue-router";
-import useProperty from "@/composables/useProperty";
 
 const props = defineProps<Property>();
-
-const { slugify } = useProperty();
 
 const formattedPrice = computed(() => {
   return props.price.toLocaleString("de-DE", {

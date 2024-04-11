@@ -1,0 +1,6 @@
+doorlist.kitzmann.me {
+	reverse_proxy localhost:3050
+	log {
+			output file /var/log/caddy/cableguys/access.log
+	}
+}

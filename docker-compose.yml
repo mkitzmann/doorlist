@@ -1,0 +1,19 @@
+version: "3"
+services:
+  doorlist:
+    image: node:latest
+    #    build:
+    #      context: ./src/
+    container_name: doorlist
+    volumes:
+      - ./:/usr/src/app/
+    working_dir: /usr/src/app
+    restart: always
+    ports:
+      - "4173:4173"
+    command:
+      [
+        sh,
+        -c,
+        "yarn install && yarn build && set NODE_ENV=production && yarn preview",
+      ]
