@@ -1,9 +1,9 @@
 <template>
-  <v-app class="bg-gray-lighter-5">
+  <v-app>
     <v-main>
       <v-container fluid style="max-width: 1400px">
         <v-img
-          src="/public//logo-wordmark.svg"
+          src="/src/assets/logo-wordmark.svg"
           :width="200"
           class="mb-16 py-4"
         ></v-img>
