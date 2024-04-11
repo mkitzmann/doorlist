@@ -1,11 +1,18 @@
 <template>
-  <v-app>
+  <v-app class="bg-gray-lighter-5">
     <v-main>
-      <router-view v-slot="{ Component, route }">
-        <transition name="fade">
-          <component :is="Component" :key="route.name" />
-        </transition>
-      </router-view>
+      <v-container fluid style="max-width: 1400px">
+        <v-img
+          src="/public//logo-wordmark.svg"
+          :width="200"
+          class="mb-16 py-4"
+        ></v-img>
+        <router-view v-slot="{ Component, route }">
+          <transition name="fade">
+            <component :is="Component" :key="route.name" />
+          </transition>
+        </router-view>
+      </v-container>
     </v-main>
   </v-app>
 </template>
