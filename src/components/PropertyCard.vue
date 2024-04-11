@@ -1,48 +1,51 @@
 <template>
-  <v-card class="h-100 d-flex flex-column">
-    <v-img
-      v-if="images && images[0]"
-      height="280px"
-      :src="'/src/assets/listing/' + images[0] + '.jpeg'"
-      cover
-      class="flex-grow-0"
-    ></v-img>
-    <div class="d-flex flex-wrap mt-6 ga-4 justify-space-between px-6">
-      <div>
-        <div class="text-h4 font-weight-bold">
-          {{ formattedPrice }}
-        </div>
+  <RouterLink to="/">
+    <v-card class="h-100 d-flex flex-column">
+      <v-img
+        v-if="images && images[0]"
+        height="280px"
+        :src="'/src/assets/listing/' + images[0] + '.jpeg'"
+        cover
+        class="flex-grow-0"
+      ></v-img>
+      <div class="d-flex flex-wrap mt-6 ga-4 justify-space-between px-6">
         <div>
-          {{ address.street }}, {{ address.postcode }}
-          {{ address.city }}
+          <div class="text-h4 font-weight-bold">
+            {{ formattedPrice }}
+          </div>
+          <div>
+            {{ address.street }}, {{ address.postcode }}
+            {{ address.city }}
+          </div>
         </div>
+        <v-chip
+          variant="flat"
+          class="text-white"
+          :style="'backgroundColor: ' + energyColor"
+        >
+          Energieklasse {{ energy_class }}</v-chip
+        >
       </div>
-      <v-chip
-        variant="flat"
-        class="text-white"
-        :style="'backgroundColor: ' + energyColor"
-      >
-        Energieklasse {{ energy_class }}</v-chip
-      >
-    </div>
-    <v-card-text class="text-body-2 pa-6">{{ description }}</v-card-text>
-    <v-spacer></v-spacer>
-    <div class="pa-6 d-flex ga-6 mt-auto">
-      <FeatureIcon icon="mdi-vector-square">{{ area }} m²</FeatureIcon>
-      <FeatureIcon icon="mdi-shower" class="ml-auto">
-        {{ bathrooms }} {{ pluraliseBath }}
-      </FeatureIcon>
-      <FeatureIcon icon="mdi-bed-queen-outline">
-        {{ bedrooms }} Zimmer
-      </FeatureIcon>
-    </div>
-  </v-card>
+      <v-card-text class="text-body-2 pa-6">{{ description }}</v-card-text>
+      <v-spacer></v-spacer>
+      <div class="pa-6 d-flex ga-6 mt-auto">
+        <FeatureIcon icon="mdi-vector-square">{{ area }} m²</FeatureIcon>
+        <FeatureIcon icon="mdi-shower" class="ml-auto">
+          {{ bathrooms }} {{ pluraliseBath }}
+        </FeatureIcon>
+        <FeatureIcon icon="mdi-bed-queen-outline">
+          {{ bedrooms }} Zimmer
+        </FeatureIcon>
+      </div>
+    </v-card>
+  </RouterLink>
 </template>
 
 <script setup lang="ts">
 import { computed } from "vue";
 import type { Property } from "../types";
 import colors from "vuetify/util/colors";
+import { RouterLink } from "vue-router";
 
 const props = defineProps<Property>();
 
