@@ -1,4 +1,4 @@
-<template><div>Index2</div></template>
+<template><div>Detail</div></template>
 
 <script setup lang="ts">
 //
