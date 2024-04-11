@@ -1,4 +1,5 @@
 export interface Property {
+  slug: string;
   address: {
     street: string;
     postcode: string;

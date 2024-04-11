@@ -1,5 +1,5 @@
 <template>
-  <RouterLink to="/">
+  <RouterLink :to="'/property/' + slug">
     <v-card class="h-100 d-flex flex-column">
       <v-img
         v-if="images && images[0]"
@@ -46,8 +46,11 @@ import { computed } from "vue";
 import type { Property } from "../types";
 import colors from "vuetify/util/colors";
 import { RouterLink } from "vue-router";
+import useProperty from "@/composables/useProperty";
 
 const props = defineProps<Property>();
+
+const { slugify } = useProperty();
 
 const formattedPrice = computed(() => {
   return props.price.toLocaleString("de-DE", {

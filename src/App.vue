@@ -2,11 +2,13 @@
   <v-app>
     <v-main>
       <v-container fluid style="max-width: 1600px">
-        <v-img
-          src="/src/assets/logo-wordmark.svg"
-          :width="200"
-          class="mb-16 py-4"
-        ></v-img>
+        <RouterLink to="/">
+          <v-img
+            src="/src/assets/logo-wordmark.svg"
+            :width="200"
+            class="mb-16 py-4"
+          ></v-img>
+        </RouterLink>
         <router-view v-slot="{ Component, route }">
           <transition name="fade">
             <component :is="Component" :key="route.name" />
@@ -17,6 +19,8 @@
   </v-app>
 </template>
 
-<script setup lang="ts">
-//
-</script>
+<style>
+a {
+  text-decoration: none;
+}
+</style>

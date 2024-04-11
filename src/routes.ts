@@ -1,11 +1,11 @@
 import { createWebHistory, createRouter, RouteRecordRaw } from "vue-router";
 
 import IndexPage from "./pages/index.vue";
-import DetailPage from "./pages/detail.vue";
+import PropertyPage from "./pages/property.vue";
 
 const routes: RouteRecordRaw[] = [
   { path: "/", component: IndexPage },
-  { path: "/detail/:slug", component: DetailPage },
+  { path: "/property/:slug", component: PropertyPage, props: true },
 ];
 
 const router = createRouter({

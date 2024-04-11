@@ -1,5 +1,6 @@
 [
   {
+    "slug": "hauptstrasse-12-12345-musterstadt",
     "address": {
       "street": "Hauptstraße 12",
       "postcode": "12345",
@@ -15,6 +16,7 @@
     "images": ["image6", "image17", "image2"]
   },
   {
+    "slug": "birkenweg-7-67890-beispieldorf",
     "address": {
       "street": "Birkenweg 7",
       "postcode": "67890",
@@ -30,6 +32,7 @@
     "images": ["image9", "image5", "image12"]
   },
   {
+    "slug": "lindenallee-22-54321-musterstadt",
     "address": {
       "street": "Lindenallee 22",
       "postcode": "54321",
@@ -45,6 +48,7 @@
     "images": ["image1", "image14", "image18"]
   },
   {
+    "slug": "rosenstrasse-5a-98765-beispielort",
     "address": {
       "street": "Rosenstraße 5a",
       "postcode": "98765",
@@ -60,6 +64,7 @@
     "images": ["image10", "image3", "image19"]
   },
   {
+    "slug": "kirchplatz-3-24680-musterdorf",
     "address": {
       "street": "Kirchplatz 3",
       "postcode": "24680",
@@ -75,6 +80,7 @@
     "images": ["image7", "image0", "image11"]
   },
   {
+    "slug": "ahornweg-16-87654-beispielstadt",
     "address": {
       "street": "Ahornweg 16",
       "postcode": "87654",
@@ -90,6 +96,7 @@
     "images": ["image16", "image13", "image4"]
   },
   {
+    "slug": "marktplatz-8-43210-musterstadt",
     "address": {
       "street": "Marktplatz 8",
       "postcode": "43210",
@@ -105,6 +112,7 @@
     "images": ["image15", "image8", "image20"]
   },
   {
+    "slug": "tannenweg-25-76543-beispielort",
     "address": {
       "street": "Tannenweg 25",
       "postcode": "76543",
@@ -120,6 +128,7 @@
     "images": ["image2", "image18", "image6"]
   },
   {
+    "slug": "seeblick-7-54321-seeparadies",
     "address": {
       "street": "Seeblick 7",
       "postcode": "54321",
@@ -135,6 +144,7 @@
     "images": ["image12", "image5", "image0"]
   },
   {
+    "slug": "bahnhofstrasse-12-98765-beispielstadt",
     "address": {
       "street": "Bahnhofstraße 12",
       "postcode": "98765",
