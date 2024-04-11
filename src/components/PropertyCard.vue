@@ -1,8 +1,9 @@
 <template>
   <v-card class="h-100 d-flex flex-column">
     <v-img
-      height="200px"
-      src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
+      v-if="images && images[0]"
+      height="280px"
+      :src="'/src/assets/listing/' + images[0] + '.jpeg'"
       cover
       class="flex-grow-0"
     ></v-img>
@@ -58,7 +59,7 @@ const pluraliseBath = computed(() => (props.bathrooms > 1 ? "Bäder" : "Bad"));
 const energyColor = computed(() => {
   switch (props.energy_class) {
     case "A+": {
-      return colors.teal.base;
+      return colors.green.darken3;
     }
     case "A": {
       return colors.green.base;

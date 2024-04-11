@@ -11,7 +11,8 @@
     "bedrooms": 4,
     "energy_class": "C",
     "description": "Gepflegte Doppelhaushälfte mit großem Garten und Garage. Ruhige Wohngegend, ideal für Familien.",
-    "location_description": "In ruhiger Lage im Stadtgebiet, gute Anbindung an öffentliche Verkehrsmittel und Einkaufsmöglichkeiten."
+    "location_description": "In ruhiger Lage im Stadtgebiet, gute Anbindung an öffentliche Verkehrsmittel und Einkaufsmöglichkeiten.",
+    "images": ["image6", "image17", "image2"]
   },
   {
     "address": {
@@ -25,7 +26,8 @@
     "bedrooms": 3,
     "energy_class": "B",
     "description": "Moderne Erdgeschosswohnung mit Balkon und Gemeinschaftsgarten. Hochwertige Ausstattung.",
-    "location_description": "Zentrale Lage in einem beliebten Wohngebiet, kurze Wege zu Schulen, Kindergärten und Geschäften."
+    "location_description": "Zentrale Lage in einem beliebten Wohngebiet, kurze Wege zu Schulen, Kindergärten und Geschäften.",
+    "images": ["image9", "image5", "image12"]
   },
   {
     "address": {
@@ -39,7 +41,8 @@
     "bedrooms": 6,
     "energy_class": "D",
     "description": "Großzügiges Einfamilienhaus mit Doppelgarage und Garten. Renovierungsbedürftig, aber viel Potenzial.",
-    "location_description": "In ruhiger Wohngegend gelegen, aber mit guter Anbindung an die Innenstadt."
+    "location_description": "In ruhiger Wohngegend gelegen, aber mit guter Anbindung an die Innenstadt.",
+    "images": ["image1", "image14", "image18"]
   },
   {
     "address": {
@@ -53,7 +56,8 @@
     "bedrooms": 2,
     "energy_class": "A+",
     "description": "Energieeffiziente Neubauwohnung mit Fußbodenheizung und Balkon. Moderne Ausstattung.",
-    "location_description": "Zentrale Lage in einer neu erschlossenen Wohngegend, gute Infrastruktur in unmittelbarer Nähe."
+    "location_description": "Zentrale Lage in einer neu erschlossenen Wohngegend, gute Infrastruktur in unmittelbarer Nähe.",
+    "images": ["image10", "image3", "image19"]
   },
   {
     "address": {
@@ -67,7 +71,8 @@
     "bedrooms": 7,
     "energy_class": "E",
     "description": "Repräsentative Altbauvilla mit parkähnlichem Grundstück. Charmantes Ambiente, aber hoher Sanierungsbedarf.",
-    "location_description": "In idyllischer Lage inmitten eines malerischen Dorfes, ruhig und naturverbunden."
+    "location_description": "In idyllischer Lage inmitten eines malerischen Dorfes, ruhig und naturverbunden.",
+    "images": ["image7", "image0", "image11"]
   },
   {
     "address": {
@@ -81,7 +86,8 @@
     "bedrooms": 3,
     "energy_class": "C",
     "description": "Gepflegte Eigentumswohnung in einer Wohnanlage mit Gemeinschaftspool und Grünflächen.",
-    "location_description": "In einer beliebten Wohngegend gelegen, gute Infrastruktur und Einkaufsmöglichkeiten in der Nähe."
+    "location_description": "In einer beliebten Wohngegend gelegen, gute Infrastruktur und Einkaufsmöglichkeiten in der Nähe.",
+    "images": ["image16", "image13", "image4"]
   },
   {
     "address": {
@@ -95,7 +101,8 @@
     "bedrooms": 9,
     "energy_class": "D",
     "description": "Historisches Stadthaus mit Gewölbekeller und Innenhof. Renovierungsbedürftig, aber einzigartiges Ambiente.",
-    "location_description": "Zentrale Innenstadtlage, umgeben von Geschäften, Cafés und kulturellen Einrichtungen."
+    "location_description": "Zentrale Innenstadtlage, umgeben von Geschäften, Cafés und kulturellen Einrichtungen.",
+    "images": ["image15", "image8", "image20"]
   },
   {
     "address": {
@@ -109,7 +116,8 @@
     "bedrooms": 3,
     "energy_class": "B",
     "description": "Moderne Dachgeschosswohnung mit Balkon und Einbauküche. Frisch renoviert und bezugsfertig.",
-    "location_description": "In einer ruhigen Wohngegend am Stadtrand gelegen, aber mit guter Anbindung an die Innenstadt."
+    "location_description": "In einer ruhigen Wohngegend am Stadtrand gelegen, aber mit guter Anbindung an die Innenstadt.",
+    "images": ["image2", "image18", "image6"]
   },
   {
     "address": {
@@ -123,7 +131,8 @@
     "bedrooms": 5,
     "energy_class": "C",
     "description": "Exklusives Einfamilienhaus mit direktem Seezugang und Bootsanleger. Luxuriöse Ausstattung.",
-    "location_description": "In traumhafter Lage direkt am See, umgeben von Natur und Erholungsgebieten."
+    "location_description": "In traumhafter Lage direkt am See, umgeben von Natur und Erholungsgebieten.",
+    "images": ["image12", "image5", "image0"]
   },
   {
     "address": {
@@ -137,6 +146,7 @@
     "bedrooms": 2,
     "energy_class": "D",
     "description": "Kompakte Stadtwohnung mit Balkon und Stellplatz. Ideal für Singles oder Paare.",
-    "location_description": "Zentrale Innenstadtlage, alles ist fußläufig erreichbar."
+    "location_description": "Zentrale Innenstadtlage, alles ist fußläufig erreichbar.",
+    "images": ["image7", "image11", "image19"]
   }
 ]

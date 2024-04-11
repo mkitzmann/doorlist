@@ -11,4 +11,5 @@ export interface Property {
   energy_class: "A+" | "A" | "B" | "C" | "D" | "E" | "F" | "G" | "H";
   description: string;
   location_description: string;
+  images: string[];
 }
