@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-main>
-      <v-container fluid style="max-width: 1400px">
+      <v-container fluid style="max-width: 1600px">
         <v-img
           src="/src/assets/logo-wordmark.svg"
           :width="200"

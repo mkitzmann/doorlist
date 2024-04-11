@@ -12,5 +12,6 @@ declare module 'vue' {
     FeatureIcon: typeof import('./src/components/FeatureIcon.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
     ListingCard: typeof import('./src/components/ListingCard.vue')['default']
+    PropertyCard: typeof import('./src/components/PropertyCard.vue')['default']
   }
 }

@@ -1,0 +1,142 @@
+[
+  {
+    "address": {
+      "street": "Hauptstraße 12",
+      "postcode": "12345",
+      "city": "Musterstadt"
+    },
+    "price": 450000,
+    "area": 125,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "energy_class": "C",
+    "description": "Gepflegte Doppelhaushälfte mit großem Garten und Garage. Ruhige Wohngegend, ideal für Familien.",
+    "location_description": "In ruhiger Lage im Stadtgebiet, gute Anbindung an öffentliche Verkehrsmittel und Einkaufsmöglichkeiten."
+  },
+  {
+    "address": {
+      "street": "Birkenweg 7",
+      "postcode": "67890",
+      "city": "Beispieldorf"
+    },
+    "price": 320000,
+    "area": 110,
+    "bathrooms": 1,
+    "bedrooms": 3,
+    "energy_class": "B",
+    "description": "Moderne Erdgeschosswohnung mit Balkon und Gemeinschaftsgarten. Hochwertige Ausstattung.",
+    "location_description": "Zentrale Lage in einem beliebten Wohngebiet, kurze Wege zu Schulen, Kindergärten und Geschäften."
+  },
+  {
+    "address": {
+      "street": "Lindenallee 22",
+      "postcode": "54321",
+      "city": "Musterstadt"
+    },
+    "price": 580000,
+    "area": 180,
+    "bathrooms": 3,
+    "bedrooms": 6,
+    "energy_class": "D",
+    "description": "Großzügiges Einfamilienhaus mit Doppelgarage und Garten. Renovierungsbedürftig, aber viel Potenzial.",
+    "location_description": "In ruhiger Wohngegend gelegen, aber mit guter Anbindung an die Innenstadt."
+  },
+  {
+    "address": {
+      "street": "Rosenstraße 5a",
+      "postcode": "98765",
+      "city": "Beispielort"
+    },
+    "price": 210000,
+    "area": 65,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "energy_class": "A+",
+    "description": "Energieeffiziente Neubauwohnung mit Fußbodenheizung und Balkon. Moderne Ausstattung.",
+    "location_description": "Zentrale Lage in einer neu erschlossenen Wohngegend, gute Infrastruktur in unmittelbarer Nähe."
+  },
+  {
+    "address": {
+      "street": "Kirchplatz 3",
+      "postcode": "24680",
+      "city": "Musterdorf"
+    },
+    "price": 720000,
+    "area": 250,
+    "bathrooms": 4,
+    "bedrooms": 7,
+    "energy_class": "E",
+    "description": "Repräsentative Altbauvilla mit parkähnlichem Grundstück. Charmantes Ambiente, aber hoher Sanierungsbedarf.",
+    "location_description": "In idyllischer Lage inmitten eines malerischen Dorfes, ruhig und naturverbunden."
+  },
+  {
+    "address": {
+      "street": "Ahornweg 16",
+      "postcode": "87654",
+      "city": "Beispielstadt"
+    },
+    "price": 370000,
+    "area": 95,
+    "bathrooms": 1,
+    "bedrooms": 3,
+    "energy_class": "C",
+    "description": "Gepflegte Eigentumswohnung in einer Wohnanlage mit Gemeinschaftspool und Grünflächen.",
+    "location_description": "In einer beliebten Wohngegend gelegen, gute Infrastruktur und Einkaufsmöglichkeiten in der Nähe."
+  },
+  {
+    "address": {
+      "street": "Marktplatz 8",
+      "postcode": "43210",
+      "city": "Musterstadt"
+    },
+    "price": 1200000,
+    "area": 320,
+    "bathrooms": 5,
+    "bedrooms": 9,
+    "energy_class": "D",
+    "description": "Historisches Stadthaus mit Gewölbekeller und Innenhof. Renovierungsbedürftig, aber einzigartiges Ambiente.",
+    "location_description": "Zentrale Innenstadtlage, umgeben von Geschäften, Cafés und kulturellen Einrichtungen."
+  },
+  {
+    "address": {
+      "street": "Tannenweg 25",
+      "postcode": "76543",
+      "city": "Beispielort"
+    },
+    "price": 280000,
+    "area": 90,
+    "bathrooms": 1,
+    "bedrooms": 3,
+    "energy_class": "B",
+    "description": "Moderne Dachgeschosswohnung mit Balkon und Einbauküche. Frisch renoviert und bezugsfertig.",
+    "location_description": "In einer ruhigen Wohngegend am Stadtrand gelegen, aber mit guter Anbindung an die Innenstadt."
+  },
+  {
+    "address": {
+      "street": "Seeblick 7",
+      "postcode": "54321",
+      "city": "Seeparadies"
+    },
+    "price": 850000,
+    "area": 220,
+    "bathrooms": 3,
+    "bedrooms": 5,
+    "energy_class": "C",
+    "description": "Exklusives Einfamilienhaus mit direktem Seezugang und Bootsanleger. Luxuriöse Ausstattung.",
+    "location_description": "In traumhafter Lage direkt am See, umgeben von Natur und Erholungsgebieten."
+  },
+  {
+    "address": {
+      "street": "Bahnhofstraße 12",
+      "postcode": "98765",
+      "city": "Beispielstadt"
+    },
+    "price": 150000,
+    "area": 50,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "energy_class": "D",
+    "description": "Kompakte Stadtwohnung mit Balkon und Stellplatz. Ideal für Singles oder Paare.",
+    "location_description": "Zentrale Innenstadtlage, alles ist fußläufig erreichbar."
+  }
+]
