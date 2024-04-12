@@ -13,7 +13,7 @@
 </template>
 
 <script setup lang="ts">
-import useProperty from "@/composables/useProperty";
+import useProperties from "@/composables/useProperties";
 
-const { properties } = useProperty();
+const { properties } = useProperties();
 </script>

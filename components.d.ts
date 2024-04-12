@@ -7,8 +7,11 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    copy: typeof import('./src/components/FeatureIcon copy.vue')['default']
+    EnergyChip: typeof import('./src/components/EnergyChip.vue')['default']
     FeatureIcon: typeof import('./src/components/FeatureIcon.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
+    ImageGallery: typeof import('./src/components/ImageGallery.vue')['default']
     PropertyCard: typeof import('./src/components/PropertyCard.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']

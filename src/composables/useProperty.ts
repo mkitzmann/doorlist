@@ -1,14 +1,22 @@
 import { Property } from "@/types";
-import propertiesDb from "../data/properties.json";
 import { computed } from "vue";
 
-export default function useProperty() {
-  const properties = computed<Property[]>(
-    () => propertiesDb as unknown as Property[]
+export default function useProperty(property: Property) {
+  const formattedPrice = computed(() => {
+    return property.price.toLocaleString("de-DE", {
+      style: "currency",
+      currency: "EUR",
+      maximumFractionDigits: 0,
+    });
+  });
+
+  const pluraliseBath = computed(() =>
+    property.bathrooms > 1 ? "Bäder" : "Bad"
   );
 
-  function findProperty(slug: string): Property|undefined {
-    return properties.value.find((item) => item.slug === slug);
-  }
-  return { properties, findProperty };
+
+  return {
+    formattedPrice,
+    pluraliseBath,
+  };
 }
