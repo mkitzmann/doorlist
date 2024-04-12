@@ -1,4 +1,7 @@
 <template>
+  <v-btn variant="text" density="compact" href="/" class="px-0 mb-4">
+    Zurück zur Übersicht
+  </v-btn>
   <template v-if="property">
     <h1 class="text-h4 text-md-h3 font-weight-bold">
       {{ property.address.street }}
