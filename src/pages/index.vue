@@ -17,6 +17,7 @@
         <v-col cols="12" md="2">
           <v-autocomplete
             clearable
+            v-model="energyclass"
             label="Energieklasse"
             :items="energyClasses"
             variant="outlined"
@@ -56,7 +57,7 @@ import { computed, ref } from "vue";
 const { properties } = useProperties();
 const filteredProperties = computed(() => {
   return properties.value.filter((property) => {
-    return matchesCity(property);
+    return matchesCity(property) && matchesEnergyclass(property);
   });
 });
 
@@ -66,5 +67,14 @@ const matchesCity = (property: Property) => {
     : property;
 };
 
+const matchesEnergyclass = (property: Property) => {
+  return energyclass.value
+    ? property.energy_class
+        .toLowerCase()
+        .includes(energyclass.value.toLowerCase())
+    : property;
+};
+
 const city = ref<string>();
+const energyclass = ref<string>();
 </script>
