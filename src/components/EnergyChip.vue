@@ -9,10 +9,11 @@
 </template>
 
 <script setup lang="ts">
+import { EnergyClasses } from "@/types";
 import { computed } from "vue";
 import colors from "vuetify/util/colors";
 
-const props = defineProps<{ energyClass: string }>();
+const props = defineProps<{ energyClass: EnergyClasses }>();
 
 const energyColor = computed(() => {
   switch (props.energyClass) {

@@ -9,8 +9,11 @@ export interface Property {
   area: number;
   bathrooms: number;
   bedrooms: number;
-  energy_class: "A+" | "A" | "B" | "C" | "D" | "E" | "F" | "G" | "H";
+  energy_class: EnergyClasses;
   description: string;
   location_description: string;
   images: string[];
 }
+
+export const energyClasses = ["A+", "A", "B", "C", "D", "E", "F", "G", "H"] as const;
+export type EnergyClasses = (typeof energyClasses)[number];
