@@ -14,6 +14,7 @@
           ></v-range-slider>
         </div>
       </v-col>
+
       <v-col cols="12" sm="3" lg="2">
         <v-text-field
           v-model="city"
@@ -49,6 +50,9 @@
       <PropertyCard v-bind="property" />
     </v-col>
   </v-row>
+  <div v-if="filteredProperties.length === 0">
+    <NoResults />
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -57,26 +61,6 @@ import { EnergyClasses, Property, energyClasses } from "@/types";
 import { computed, ref } from "vue";
 
 const { properties } = useProperties();
-const filteredProperties = computed(() => {
-  return properties.value.filter((property) => {
-    return matchesCity(property) && matchesEnergyclass(property);
-  });
-});
-
-const matchesCity = (property: Property) => {
-  return city.value
-    ? property.address.city.toLowerCase().includes(city.value.toLowerCase())
-    : property;
-};
-
-const matchesEnergyclass = (property: Property) => {
-  return energyclass.value
-    ? property.energy_class === energyclass.value
-    : property;
-};
-
-const city = ref<string>();
-const energyclass = ref<EnergyClasses>();
 
 const sortedByPrice = computed(() =>
   properties.value.sort((a, b) => b.price - a.price)
@@ -94,4 +78,32 @@ const minMaxPrice = computed<[number, number]>(() => [
 ]);
 
 const price = ref<[number, number]>(minMaxPrice.value);
+const city = ref<string>();
+const energyclass = ref<EnergyClasses>();
+
+const filteredProperties = computed(() => {
+  return sortedByPrice.value.filter((property) => {
+    return (
+      matchesCity(property) &&
+      matchesEnergyclass(property) &&
+      matchesPrice(property)
+    );
+  });
+});
+
+const matchesCity = (property: Property) => {
+  return city.value
+    ? property.address.city.toLowerCase().includes(city.value.toLowerCase())
+    : property;
+};
+
+const matchesEnergyclass = (property: Property) => {
+  return energyclass.value
+    ? property.energy_class === energyclass.value
+    : property;
+};
+
+const matchesPrice = (property: Property) => {
+  return property.price >= price.value[0] && property.price <= price.value[1];
+};
 </script>
