@@ -16,15 +16,14 @@
       </v-col>
 
       <v-col cols="12" sm="3" lg="2">
-        <v-text-field
+        <v-autocomplete
           v-model="city"
-          :counter="10"
           label="Stadt"
-          hide-details
           clearable
           variant="outlined"
           density="compact"
-        ></v-text-field>
+          :items="allCities"
+        ></v-autocomplete>
       </v-col>
 
       <v-col cols="12" sm="3" lg="2">
@@ -75,6 +74,10 @@ const minPrice = computed(
 const minMaxPrice = computed<[number, number]>(() => [
   minPrice.value,
   maxPrice.value,
+]);
+
+const allCities = computed(() => [
+  ...new Set(properties.value.map((property) => property.address.city)),
 ]);
 
 const price = ref<[number, number]>(minMaxPrice.value);

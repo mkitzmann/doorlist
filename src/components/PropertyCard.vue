@@ -25,9 +25,9 @@
           </div>
           <EnergyChip :energy-class="energy_class" />
         </div>
-        <v-card-text class="text-body-2 pa-6 font-weight-light">{{
-          description
-        }}</v-card-text>
+        <div class="pa-6 font-weight-light">
+          {{ description }}
+        </div>
         <v-spacer></v-spacer>
         <div class="pa-6 d-flex ga-6 mt-auto">
           <FeatureIcon icon="mdi-vector-square">{{ area }} m²</FeatureIcon>
