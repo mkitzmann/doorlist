@@ -158,5 +158,85 @@
     "description": "Kompakte Stadtwohnung mit Balkon und Stellplatz. Ideal für Singles oder Paare.",
     "location_description": "Zentrale Innenstadtlage, alles ist fußläufig erreichbar.",
     "images": ["image7", "image11", "image19"]
+  },
+  {
+    "slug": "schlossstrasse-20-54321-musterstadt",
+    "address": {
+      "street": "Schlossstraße 20",
+      "postcode": "54321",
+      "city": "Musterstadt"
+    },
+    "price": 920000,
+    "area": 300,
+    "bathrooms": 4,
+    "bedrooms": 8,
+    "energy_class": "B",
+    "description": "Prächtiges Herrenhaus mit großem Park. Historisches Ambiente, jedoch modernisiert.",
+    "location_description": "Ruhige Lage nahe des Stadtzentrums mit guter Anbindung an öffentliche Verkehrsmittel.",
+    "images": ["image3", "image9", "image16"]
+  },
+  {
+    "slug": "am-wiesenweg-5-98765-beispielort",
+    "address": {
+      "street": "Am Wiesenweg 5",
+      "postcode": "98765",
+      "city": "Beispielort"
+    },
+    "price": 400000,
+    "area": 150,
+    "bathrooms": 2,
+    "bedrooms": 5,
+    "energy_class": "C",
+    "description": "Familienfreundliches Haus mit großem Garten. Ruhige Lage in der Nähe von Schulen und Parks.",
+    "location_description": "In einem grünen Viertel mit guten Einkaufsmöglichkeiten und Verkehrsanbindungen.",
+    "images": ["image7", "image13", "image19"]
+  },
+  {
+    "slug": "bergstrasse-15-34567-beispielstadt",
+    "address": {
+      "street": "Bergstraße 15",
+      "postcode": "34567",
+      "city": "Beispielstadt"
+    },
+    "price": 550000,
+    "area": 200,
+    "bathrooms": 3,
+    "bedrooms": 6,
+    "energy_class": "D",
+    "description": "Geräumiges Haus mit schönem Blick auf die Berge. Modernes Interieur mit großem Wohnbereich.",
+    "location_description": "In einer ruhigen Wohngegend mit guter Anbindung an die Autobahn und Nahverkehrsmittel.",
+    "images": ["image2", "image8", "image15"]
+  },
+  {
+    "slug": "am-kanal-12-87654-beispielstadt",
+    "address": {
+      "street": "Am Kanal 12",
+      "postcode": "87654",
+      "city": "Beispielstadt"
+    },
+    "price": 620000,
+    "area": 180,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "energy_class": "B",
+    "description": "Moderne Villa mit Blick auf den Kanal. Große Fenster und offene Gestaltung.",
+    "location_description": "Direkter Zugang zum Kanalufer und kurze Entfernung zu Parks und Restaurants.",
+    "images": ["image4", "image11", "image18"]
+  },
+  {
+    "slug": "sonnenweg-8-23456-sonnenstadt",
+    "address": {
+      "street": "Sonnenweg 8",
+      "postcode": "23456",
+      "city": "Sonnenstadt"
+    },
+    "price": 480000,
+    "area": 160,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "energy_class": "C",
+    "description": "Familienhaus in sonniger Lage. Großer Garten und Terrasse.",
+    "location_description": "Ruhige Wohngegend mit guter Anbindung an Schulen und Geschäfte.",
+    "images": ["image1", "image5", "image14"]
   }
 ]

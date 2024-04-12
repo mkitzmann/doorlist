@@ -1,40 +1,42 @@
 <template>
   <v-form>
-    <v-container>
-      <v-row>
-        <v-col cols="12" md="3">
-          <v-text-field
-            v-model="city"
-            :counter="10"
-            label="City"
-            hide-details
-            clearable
-            variant="outlined"
-            density="compact"
-          ></v-text-field>
-        </v-col>
+    <v-row>
+      <v-spacer></v-spacer>
+      <v-col cols="12" sm="6" lg="3">
+        <div class="d-flex ga-4">
+          <div>Preis</div>
+          <v-range-slider
+            v-model="price"
+            step="10000"
+            thumb-label="always"
+            :min="minPrice"
+            :max="maxPrice"
+          ></v-range-slider>
+        </div>
+      </v-col>
+      <v-col cols="12" sm="3" lg="2">
+        <v-text-field
+          v-model="city"
+          :counter="10"
+          label="Stadt"
+          hide-details
+          clearable
+          variant="outlined"
+          density="compact"
+        ></v-text-field>
+      </v-col>
 
-        <v-col cols="12" md="2">
-          <v-autocomplete
-            clearable
-            v-model="energyclass"
-            label="Energieklasse"
-            :items="energyClasses"
-            variant="outlined"
-            density="compact"
-          ></v-autocomplete>
-        </v-col>
-
-        <!-- <v-col cols="12" md="4">
-          <v-text-field
-            v-model="email"
-            label="E-mail"
-            hide-details
-            required
-          ></v-text-field>
-        </v-col>  -->
-      </v-row>
-    </v-container>
+      <v-col cols="12" sm="3" lg="2">
+        <v-autocomplete
+          clearable
+          v-model="energyclass"
+          label="Energieklasse"
+          :items="energyClasses"
+          variant="outlined"
+          density="compact"
+        ></v-autocomplete>
+      </v-col>
+    </v-row>
   </v-form>
   <v-row>
     <v-col
@@ -51,7 +53,7 @@
 
 <script setup lang="ts">
 import useProperties from "@/composables/useProperties";
-import { Property, energyClasses } from "@/types";
+import { EnergyClasses, Property, energyClasses } from "@/types";
 import { computed, ref } from "vue";
 
 const { properties } = useProperties();
@@ -69,12 +71,27 @@ const matchesCity = (property: Property) => {
 
 const matchesEnergyclass = (property: Property) => {
   return energyclass.value
-    ? property.energy_class
-        .toLowerCase()
-        .includes(energyclass.value.toLowerCase())
+    ? property.energy_class === energyclass.value
     : property;
 };
 
 const city = ref<string>();
-const energyclass = ref<string>();
+const energyclass = ref<EnergyClasses>();
+
+const sortedByPrice = computed(() =>
+  properties.value.sort((a, b) => b.price - a.price)
+);
+
+const maxPrice = computed(() => sortedByPrice.value[0].price);
+
+const minPrice = computed(
+  () => sortedByPrice.value[sortedByPrice.value.length - 1].price
+);
+
+const minMaxPrice = computed<[number, number]>(() => [
+  minPrice.value,
+  maxPrice.value,
+]);
+
+const price = ref<[number, number]>(minMaxPrice.value);
 </script>
