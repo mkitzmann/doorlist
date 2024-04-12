@@ -1,56 +1,58 @@
 <template>
-  <v-form>
+  <div>
+    <v-form>
+      <v-row>
+        <v-spacer></v-spacer>
+        <v-col cols="12" sm="6" lg="3">
+          <div class="d-flex ga-4">
+            <div>Preis</div>
+            <v-range-slider
+              v-model="price"
+              step="10000"
+              thumb-label="always"
+              :min="minPrice"
+              :max="maxPrice"
+            ></v-range-slider>
+          </div>
+        </v-col>
+
+        <v-col cols="12" sm="3" lg="2">
+          <v-autocomplete
+            v-model="city"
+            label="Stadt"
+            clearable
+            variant="outlined"
+            density="compact"
+            :items="allCities"
+          ></v-autocomplete>
+        </v-col>
+
+        <v-col cols="12" sm="3" lg="2">
+          <v-autocomplete
+            clearable
+            v-model="energyclass"
+            label="Energieklasse"
+            :items="energyClasses"
+            variant="outlined"
+            density="compact"
+          ></v-autocomplete>
+        </v-col>
+      </v-row>
+    </v-form>
     <v-row>
-      <v-spacer></v-spacer>
-      <v-col cols="12" sm="6" lg="3">
-        <div class="d-flex ga-4">
-          <div>Preis</div>
-          <v-range-slider
-            v-model="price"
-            step="10000"
-            thumb-label="always"
-            :min="minPrice"
-            :max="maxPrice"
-          ></v-range-slider>
-        </div>
-      </v-col>
-
-      <v-col cols="12" sm="3" lg="2">
-        <v-autocomplete
-          v-model="city"
-          label="Stadt"
-          clearable
-          variant="outlined"
-          density="compact"
-          :items="allCities"
-        ></v-autocomplete>
-      </v-col>
-
-      <v-col cols="12" sm="3" lg="2">
-        <v-autocomplete
-          clearable
-          v-model="energyclass"
-          label="Energieklasse"
-          :items="energyClasses"
-          variant="outlined"
-          density="compact"
-        ></v-autocomplete>
+      <v-col
+        v-for="property in filteredProperties"
+        :key="property.address.street"
+        cols="12"
+        sm="6"
+        lg="4"
+      >
+        <PropertyCard v-bind="property" />
       </v-col>
     </v-row>
-  </v-form>
-  <v-row>
-    <v-col
-      v-for="property in filteredProperties"
-      :key="property.address.street"
-      cols="12"
-      sm="6"
-      lg="4"
-    >
-      <PropertyCard v-bind="property" />
-    </v-col>
-  </v-row>
-  <div v-if="filteredProperties.length === 0">
-    <NoResults />
+    <div v-if="filteredProperties.length === 0">
+      <NoResults />
+    </div>
   </div>
 </template>
 
