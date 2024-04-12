@@ -23,4 +23,8 @@
 a {
   text-decoration: none;
 }
+
+* {
+  font-family: "Lato" !important;
+}
 </style>

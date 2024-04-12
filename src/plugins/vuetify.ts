@@ -24,7 +24,6 @@ const doorlistTheme: ThemeDefinition = {
 export default createVuetify({
   defaults: {
     VCard: {
-      flat: true,
       class: "rounded-xl",
     },
   },
