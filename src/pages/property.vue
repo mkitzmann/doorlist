@@ -1,6 +1,6 @@
 <template>
   <template v-if="property">
-    <h1 class="text-h3 font-weight-bold">
+    <h1 class="text-h4 text-md-h3 font-weight-bold">
       {{ property.address.street }}
     </h1>
     <div class="font-weight-light">
@@ -9,10 +9,10 @@
     </div>
     <ImageGallery :images="property.images" class="mt-8" />
     <v-row>
-      <v-col cols="12" md="3">
+      <v-col cols="12" md="9" lg="3">
         <div class="d-flex flex-column ga-4">
           <div class="d-flex flex-wrap mt-6 ga-4 justify-space-between">
-            <div class="text-h2 font-weight-bold">
+            <div class="text-h3 text-md-h2 font-weight-bold">
               {{ formattedPrice }}
             </div>
           </div>
@@ -30,9 +30,10 @@
               {{ property.bedrooms }} Zimmer
             </FeatureIcon>
           </div>
-        </div> </v-col
-      ><v-col cols="0" md="1"></v-col>
-      <v-col cols="12" md="5">
+        </div>
+      </v-col>
+      <v-col cols="0" md="0" lg="1"></v-col>
+      <v-col cols="12" md="9" lg="5">
         <h2 class="mt-8 mb-4 font-weight-bold text-h6">Objektbeschreibung</h2>
         <div class="text-body-2 font-weight-light">
           {{ property.description }}
